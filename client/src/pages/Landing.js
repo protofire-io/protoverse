@@ -72,7 +72,7 @@ const Landing = () => {
 
     const start = performance.now();
     const tick = (now) => {
-      const t = Math.min(0.97, (now - start) / LOAD_DURATION_MS);
+      const t = Math.min(1, (now - start) / LOAD_DURATION_MS);
       // Ease-out curve so the bar feels like the classic loader
       const eased = 1 - Math.pow(1 - t, 2.4);
       setProgress(Math.round(eased * 100));

@@ -17,7 +17,7 @@ const ConnectWallet = () => {
 
   useEffect(() => {
     // Skip until the socket exists; also avoid double-join when already connected
-    if (!socket || socket.connected === true || joining.current) return undefined
+    if (!socket || socket.connected !== true || joining.current) return undefined
 
     const query = new URLSearchParams(location.search)
     const walletFromQuery = query.get('walletAddress')
