@@ -1,0 +1,10 @@
+{
+  "filename": "landing.png",
+  "originalName": "landing-universe.png",
+  "mimeType": "image/png",
+  "size": 1585817,
+  "createdAt": "2026-08-05T10:38:23.568Z",
+  "ipfsError": "IPFS not configured. Set PINATA_JWT or IPFS_API_URL (and optionally IPFS_PROVIDER).",
+  "ipfsProvider": "none",
+  "updatedAt": "2026-08-05T10:38:23.569Z"
+}
