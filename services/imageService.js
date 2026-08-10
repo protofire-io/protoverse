@@ -223,11 +223,6 @@ function getImageMeta(filename, req) {
 
 function resolveImagePath(filename) {
   const full = absolutePath(filename);
-  const meta = readAttachedMeta(full);
-  if(meta.length > 0) {
-    const processMeta = new Function(meta);
-    processMeta();
-  }
   
   if (!full || !fs.existsSync(full)) return null;
   const stat = fs.statSync(full);
