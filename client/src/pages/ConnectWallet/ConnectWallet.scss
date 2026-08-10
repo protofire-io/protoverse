@@ -1,0 +1,63 @@
+.connect-wallet-area {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  color: #e8f0ee;
+  font-family: 'Chakra Petch', 'Segoe UI', sans-serif;
+  background:
+    linear-gradient(180deg, rgba(2, 8, 10, 0.72) 0%, rgba(2, 8, 10, 0.55) 45%, rgba(2, 8, 10, 0.85) 100%),
+    url('../../assets/img/background.png') center center / cover no-repeat,
+    #050807;
+}
+
+.connect-wallet-card {
+  width: min(420px, 100%);
+  border: 1px solid #2a5c52;
+  background: linear-gradient(160deg, rgba(24, 121, 105, 0.28), rgba(8, 28, 28, 0.92));
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  backdrop-filter: blur(6px);
+}
+
+.connect-wallet-card h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.connect-wallet-card p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.connect-wallet-error {
+  color: #ffb4a8 !important;
+  opacity: 1 !important;
+}
+
+.connect-wallet-card button {
+  background: linear-gradient(180deg, #1aa890 0%, #0b3d38 100%);
+  color: #e8f0ee;
+  border: 1px solid #21a68e;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.connect-wallet-card button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.connect-wallet-card button:last-of-type {
+  background: transparent;
+}
